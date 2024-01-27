@@ -1,4 +1,6 @@
 function getDayName(day) {
-    return day
+    if(typeof day !== 'number') {
+        return 'error'
+    }
 }
-console.log(getDayName())
+console.log(getDayName('s'))
